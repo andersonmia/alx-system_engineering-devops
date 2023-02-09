@@ -1,8 +1,2 @@
 #!/bin/bash
-directories=`find . -type d`
-for directory in $directories
-do
-  chmod u+x $directory
-  chmod g+x $directory
-  chmod o+x $directory
-done
+chmod -R ugo+X .
